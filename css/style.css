@@ -9,7 +9,7 @@ body {
 /* MENU LATERAL */
 .wrapper {
     width: 25%;
-    max-width: 400px;
+    max-width: 300px;
     height: 100vh;
 }
 .text-secondary {
@@ -18,9 +18,8 @@ body {
 .rounded-circle {
     width: 60px;
 }
-
-li:hover {
-    color: #fff;
+li:hover a {
+    color: #fff !important;
     background-color: #1d1635;
     font-weight: 700 !important;
     transition: 0.2s;
@@ -41,7 +40,6 @@ li:hover {
 .bg-primary {
     background-color: #2e2842 !important;
 }
-
 .table {
     padding: 50px !important;
 }
