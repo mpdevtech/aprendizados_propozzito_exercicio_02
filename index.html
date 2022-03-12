@@ -33,7 +33,7 @@
             <div class="col-2 bg-dark wrapper p-0">
                <p class="p-3 bg-danger text-center fs-4 text-white fw-bold mb-0"><i class="bi bi-speedometer px-3"></i>Varlik</p>
                <div class="p-0">
-                 <ul class="nav flex-column pt-3">
+                 <ul class="nav flex-column px-3">
                   <li class="nav-item fs-5 fw-normal py-2">
                      <a href="#" class="nav-link text-white" aria-current="page">
                         <i class="bi bi-speedometer px-3"></i>Dashboard</a>
@@ -100,7 +100,7 @@
                   </div>
                </div>
                <!-- PESQUISAR/FILTRAR TAREFA -->
-               <div class="container p-3 mt-3 bg-white rounded">
+               <div class="container px-5 mt-3 rounded">
                   <div class="row align-items-center justify-content-center">
                      <div class="col-10 text-center">
                            <select class="form-select" aria-label="Default select example">
@@ -117,8 +117,8 @@
                   </div>
                </div>
                <!-- CADASTRO DE TAREFAS -->
-               <div class="container p-2">
-                  <div class="row align-items-center pt-2 mb-3 border-bottom">
+               <div class="container p-2 text-dark">
+                  <div class="row align-items-center px-5 mb-3 border-bottom">
                      <div class="col-4 px-1">
                         <label for="title" class="form-label fw-bold">
                            Descrição da tarefa:
@@ -149,7 +149,7 @@
                            </label>
                            <input type="text" class="form-control" id="title" name="cliente"/>
                      </div>
-                     <div class="col-2 pt-2">
+                     <div class="col-2 px-1">
                            <label for="title" class="form-label fw-bold">
                               Status:
                            </label>
@@ -160,14 +160,14 @@
                               <option value="3">Em atraso</option>
                               <option value="3">Pausado</option>
                            </select>
-                     </div>
-                     <div class="pb-1 text-end">
-                        <button class="btn btn-primary bi bi-plus-circle my-3" type="button">
-                           Cadastrar tarefa
-                        </button>
-                     </div>
+                        </div>
+                        <div class="pb-1 px-1 text-end">
+                           <button class="btn btn-primary bi bi-plus-circle my-3" type="button">
+                              Cadastrar tarefa
+                           </button>
+                        </div>
                   </div>
-                  <div class="container p-0" >
+                  <div class="container px-5" >
                      <div class="col-12">
                         <!-- TABELA -->
                         <div class="row">
@@ -175,15 +175,14 @@
                               <span class="badge bg-primary py-2">Todas as tarefas</span>
                            </p>
                            <div class="container p-3 bg-white rounded">
-                              <table class="table pt-3">
+                              <table class="table pt-3 text-dark">
                                  <thead>
-                                      <tr>
+                                      <tr class="text-dark">
                                        <th>Descrição da tarefa</th>
                                        <th>Cliente</th>
-                                       <th>Data</th>
-                                       <th>Prazo</th>
+                                       <th>Prazo Final</th>
                                        <th>Responsável</th>
-                                       <th>Conclusão</th>
+                                       <th>Prioridade</th>
                                        <th>Status</th>
                                     </tr>
                                  </thead>
@@ -191,100 +190,85 @@
                                     <tr>
                                        <td>Criar banner para os site nas versões mobile e desktop</td>
                                        <td>Real Link</td>
-                                       <td>09/03/2022</td>
-                                       <td>09/03/2022</td>
+                                       <td>02/03/2022</td>
                                        <td>Igor Pereira</td>
                                        <td>
-                                          <button type="button" class="btn btn-secondary btn-sm">
-                                             <i class="bi bi-pencil-fill"></i></i> Editar</button>
-                                          <button type="button" class="btn btn-success btn-sm">
-                                             <i class="bi bi-check2-circle"></i></i> Concluir</button>
-                                          <button type="button" class="btn btn-primary btn-sm">
-                                             <i class="bi bi-folder-check"></i> Arquivar</button>
+                                          <select class="form-select" >
+                                             <option value="1">Urgente</option>
+                                             <option value="2">Alta</option>
+                                             <option value="3">Normal</option>
+                                             <option value="3">Baixa</option>
+                                          </select>
                                        </td>
                                        <td>
-                                          <p class="fs-6">
-                                                <span class="badge bg-danger py-2 w-100">Em atraso</span>
-                                          </p>
+                                          <span class="badge text-danger py-2 fw-bold">Em atraso</span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Criar banner para os site nas versões mobile e desktop</td>
+                                       <td>Real Link</td>
+                                       <td>14/03/2022</td>
+                                       <td>Igor Pereira</td>
+                                       <td>
+                                          <select class="form-select" >
+                                             <option value="1">Urgente</option>
+                                             <option value="2">Alta</option>
+                                             <option value="3">Normal</option>
+                                             <option value="3">Baixa</option>
+                                          </select>
+                                       </td>
+                                       <td>
+                                          <span class="badge text-warning py-2 fw-bold">Em andamento</span>
                                        </td>
                                     </tr>
                                     <tr>
                                        <td>Criar banner para os site nas versões mobile e desktop</td>
                                        <td>Real Link</td>
                                        <td>09/03/2022</td>
-                                       <td>09/03/2022</td>
                                        <td>Igor Pereira</td>
                                        <td>
-                                          <button type="button" class="btn btn-secondary btn-sm">
-                                             <i class="bi bi-pencil-fill"></i></i> Editar</button>
-                                          <button type="button" class="btn btn-success btn-sm">
-                                             <i class="bi bi-check2-circle"></i></i> Concluir</button>
-                                          <button type="button" class="btn btn-primary btn-sm">
-                                             <i class="bi bi-folder-check"></i> Arquivar</button>
+                                          <select class="form-select" >
+                                             <option value="1">Urgente</option>
+                                             <option value="2">Alta</option>
+                                             <option value="3">Normal</option>
+                                             <option value="3">Baixa</option>
+                                          </select> 
                                        </td>
                                        <td>
-                                          <p class="fs-6">
-                                                <span class="badge bg-warning py-2 w-100">Em andamento</span>
-                                          </p>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>Criar banner para os site nas versões mobile e desktop</td>
-                                       <td>Real Link</td>
-                                       <td>09/03/2022</td>
-                                       <td>09/03/2022</td>
-                                       <td>Igor Pereira</td>
-                                       <td>
-                                          <button type="button" class="btn btn-secondary btn-sm">
-                                             <i class="bi bi-pencil-fill"></i></i> Editar</button>
-                                          <button type="button" class="btn btn-success btn-sm">
-                                             <i class="bi bi-check2-circle"></i></i> Concluir</button>
-                                          <button type="button" class="btn btn-primary btn-sm">
-                                             <i class="bi bi-folder-check"></i> Arquivar</button>   
-                                       </td>
-                                       <td>
-                                          <p class="fs-6">
-                                                <span class="badge bg-success py-2 w-100">Conluído</span>
-                                          </p>
+                                          <span class="badge text-success py-2 fw-bold">Concluído</span>
                                        </td>
                                     </tr>
                                     <tr>
                                        <td>Criar banner para os site nas versões mnbile e desktop</td>
                                        <td>Real Link</td>
                                        <td>09/03/2022</td>
-                                       <td>09/03/2022</td>
                                        <td>Igor Pereira</td>
                                        <td>
-                                          <button type="button" class="btn btn-secondary btn-sm">
-                                             <i class="bi bi-pencil-fill"></i></i> Editar</button>
-                                          <button type="button" class="btn btn-success btn-sm">
-                                             <i class="bi bi-check2-circle"></i></i> Concluir</button>
-                                          <button type="button" class="btn btn-primary btn-sm">
-                                             <i class="bi bi-folder-check"></i> Arquivar</button>
+                                          <select class="form-select" >
+                                             <option value="1">Urgente</option>
+                                             <option value="2">Alta</option>
+                                             <option value="3">Normal</option>
+                                             <option value="3">Baixa</option>
+                                          </select>
                                           <td>
-                                             <p class="fs-6">
-                                                <span class="badge bg-success py-2 w-100">Conluído</span>
-                                             </p>
+                                             <span class="badge text-success py-2 fw-bold">Concluído</span>
                                           </td>
                                     </tr>
                                     <tr>
                                        <td>Criar banner para os site nas versões mobile e desktop</td>
                                        <td>Real Link</td>
                                        <td>09/03/2022</td>
-                                       <td>09/03/2022</td>
                                        <td>Igor Pereira</td>
                                        <td>
-                                          <button type="button" class="btn btn-secondary btn-sm">
-                                             <i class="bi bi-pencil-fill"></i></i> Editar</button>
-                                          <button type="button" class="btn btn-success btn-sm">
-                                             <i class="bi bi-check2-circle"></i></i> Concluir</button>
-                                          <button type="button" class="btn btn-primary btn-sm">
-                                             <i class="bi bi-folder-check"></i> Arquivar</button>
+                                          <select class="form-select" >
+                                             <option value="1">Urgente</option>
+                                             <option value="2">Alta</option>
+                                             <option value="3">Normal</option>
+                                             <option value="3">Baixa</option>
+                                          </select>
                                        </td>
                                        <td>
-                                          <p class="fs-6">
-                                             <span class="badge bg-success py-2 w-100">Conluído</span>
-                                          </p>
+                                          <span class="badge text-success py-2 fw-bold">Concluído</span>
                                        </td>
                                     </tr>
                                  </tbody>

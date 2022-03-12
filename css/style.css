@@ -12,6 +12,9 @@ body {
     max-width: 300px;
     height: 100vh;
 }
+.navbar {
+    height: 70px;
+}
 .text-secondary {
     color: #a7a7a7 !important;
 }
@@ -20,6 +23,7 @@ body {
 }
 li:hover a {
     color: #fff !important;
+    border-radius: 10px;
     background-color: #1d1635;
     font-weight: 700 !important;
     transition: 0.2s;
@@ -30,6 +34,7 @@ li:hover a {
 }
 .bg-danger {
     background-color: #da1616 !important;
+    height: 70px;
 }
 .bg-secondary {
     background-color: #efebf3 !important;
@@ -42,4 +47,7 @@ li:hover a {
 }
 .table {
     padding: 50px !important;
+}
+.text-dark {
+    color: #5a556e !important;
 }
