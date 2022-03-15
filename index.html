@@ -100,7 +100,7 @@
                   </div>
                </div>
                <!-- PESQUISAR/FILTRAR TAREFA -->
-               <div class="container px-5 mt-3 rounded">
+               <div class="container p-3 mt-3 rounded">
                   <div class="row align-items-center justify-content-center">
                      <div class="col-10 text-center">
                            <select class="form-select" aria-label="Default select example">
@@ -117,8 +117,8 @@
                   </div>
                </div>
                <!-- CADASTRO DE TAREFAS -->
-               <div class="container p-2 text-dark">
-                  <div class="row align-items-center px-5 mb-3 border-bottom">
+               <div class="container mt-3text-dark">
+                  <div class="row align-items-center p-0 mb-3 border-bottom">
                      <div class="col-4 px-1">
                         <label for="title" class="form-label fw-bold">
                            Descrição da tarefa:
@@ -166,119 +166,141 @@
                               Cadastrar tarefa
                            </button>
                         </div>
-                  </div>
-                  <div class="container px-5" >
+                     </div>
                      <div class="col-12">
                         <!-- TABELA -->
-                        <div class="row">
-                           <p class="fs-4 mb-1 px-0">
-                              <span class="badge bg-primary py-2">Todas as tarefas</span>
-                           </p>
-                           <div class="container p-3 bg-white rounded">
-                              <table class="table pt-3 text-dark">
-                                 <thead>
-                                      <tr class="text-dark">
-                                       <th>Descrição da tarefa</th>
-                                       <th>Cliente</th>
-                                       <th>Prazo Final</th>
-                                       <th>Responsável</th>
-                                       <th>Prioridade</th>
-                                       <th>Status</th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr>
-                                       <td>Criar banner para os site nas versões mobile e desktop</td>
-                                       <td>Real Link</td>
-                                       <td>02/03/2022</td>
-                                       <td>Igor Pereira</td>
-                                       <td>
-                                          <select class="form-select" >
-                                             <option value="1">Urgente</option>
-                                             <option value="2">Alta</option>
-                                             <option value="3">Normal</option>
-                                             <option value="3">Baixa</option>
-                                          </select>
-                                       </td>
-                                       <td>
-                                          <span class="badge text-danger py-2 fw-bold">Em atraso</span>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>Criar banner para os site nas versões mobile e desktop</td>
-                                       <td>Real Link</td>
-                                       <td>14/03/2022</td>
-                                       <td>Igor Pereira</td>
-                                       <td>
-                                          <select class="form-select" >
-                                             <option value="1">Urgente</option>
-                                             <option value="2">Alta</option>
-                                             <option value="3">Normal</option>
-                                             <option value="3">Baixa</option>
-                                          </select>
-                                       </td>
-                                       <td>
-                                          <span class="badge text-warning py-2 fw-bold">Em andamento</span>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>Criar banner para os site nas versões mobile e desktop</td>
-                                       <td>Real Link</td>
-                                       <td>09/03/2022</td>
-                                       <td>Igor Pereira</td>
-                                       <td>
-                                          <select class="form-select" >
-                                             <option value="1">Urgente</option>
-                                             <option value="2">Alta</option>
-                                             <option value="3">Normal</option>
-                                             <option value="3">Baixa</option>
-                                          </select> 
-                                       </td>
-                                       <td>
-                                          <span class="badge text-success py-2 fw-bold">Concluído</span>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>Criar banner para os site nas versões mnbile e desktop</td>
-                                       <td>Real Link</td>
-                                       <td>09/03/2022</td>
-                                       <td>Igor Pereira</td>
-                                       <td>
-                                          <select class="form-select" >
-                                             <option value="1">Urgente</option>
-                                             <option value="2">Alta</option>
-                                             <option value="3">Normal</option>
-                                             <option value="3">Baixa</option>
-                                          </select>
-                                          <td>
-                                             <span class="badge text-success py-2 fw-bold">Concluído</span>
-                                          </td>
-                                    </tr>
-                                    <tr>
-                                       <td>Criar banner para os site nas versões mobile e desktop</td>
-                                       <td>Real Link</td>
-                                       <td>09/03/2022</td>
-                                       <td>Igor Pereira</td>
-                                       <td>
-                                          <select class="form-select" >
-                                             <option value="1">Urgente</option>
-                                             <option value="2">Alta</option>
-                                             <option value="3">Normal</option>
-                                             <option value="3">Baixa</option>
-                                          </select>
-                                       </td>
-                                       <td>
-                                          <span class="badge text-success py-2 fw-bold">Concluído</span>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
+                        <h4 class="m-0">
+                           <span class="bi bi-arrow-down-circle badge bg-primary"> Todas as tarefas</span>
+                        </h4>
+                        <div class="d-flex justify-content-start">
+                        </div>
+                        <div class="container p-0">
+                           <div class="row bg-white align-items-center  p-3 shadow">
+                              <div class="col-3">
+                                 <p class="m-0 fw-bold">Descrição da tarefa</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0 fw-bold">Cliente</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0 fw-bold">Prazo final</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0 fw-bold">Resp.</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0 fw-bold">Prioridade</p>
+                              </div>
+                              <div class="col-1">
+                                 <p class="m-0 fw-bold">Status</p>
+                              </div>
+                           </div>
+                           <div class="row bg-white align-items-center justify-content-start p-3 shadow">
+                              <div class="col-3">
+                                 <p class="m-0">Criar banners nas verões desktop 1600x500px e mobile 1080x1350px.</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">Real Link</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">09/03/2022</p>
+                              </div>
+                              <div class="col-2">
+                                 <img class="rounded-circle px-2" src="css/img/PERFIL02.png" alt="">
+                              </div>
+                              <div class="col-2">
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecione</option>
+                                    <option value="1">Urgente</option>
+                                    <option value="2">Alta</option>
+                                    <option value="3">Normal</option>
+                                    <option value="3">Baixa</option>
+                                 </select>
+                              </div>
+                              <div class="col-1">
+                                 <p class="m-0 fw-bold text-danger">Em atraso</p>
+                              </div>
+                           </div>
+                           <div class="row bg-white align-items-center justify-content-start p-3 shadow">
+                              <div class="col-3">
+                                 <p class="m-0">Criar banners nas verões desktop 1600x500px e mobile 1080x1350px.</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">Real Link</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">09/03/2022</p>
+                              </div>
+                              <div class="col-2">
+                                 <img class="rounded-circle px-2" src="css/img/PERFIL02.png" alt="">
+                              </div>
+                              <div class="col-2">
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecione</option>
+                                    <option value="1">Urgente</option>
+                                    <option value="2">Alta</option>
+                                    <option value="3">Normal</option>
+                                    <option value="3">Baixa</option>
+                                 </select>
+                              </div>
+                              <div class="col-1">
+                                 <p class="m-0 fw-bold text-warning">Andamento</p>
+                              </div>
+                           </div>
+                           <div class="row bg-white align-items-center justify-content-start p-3 shadow">
+                              <div class="col-3">
+                                 <p class="m-0">Criar banners nas verões desktop 1600x500px e mobile 1080x1350px.</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">Real Link</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">09/03/2022</p>
+                              </div>
+                              <div class="col-2">
+                                 <img class="rounded-circle px-2" src="css/img/PERFIL02.png" alt="">
+                              </div>
+                              <div class="col-2">
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecione</option>
+                                    <option value="1">Urgente</option>
+                                    <option value="2">Alta</option>
+                                    <option value="3">Normal</option>
+                                    <option value="3">Baixa</option>
+                                 </select>
+                              </div>
+                              <div class="col-1">
+                                 <p class="m-0 fw-bold text-warning">Andamento</p>
+                              </div>
+                           </div>
+                           <div class="row bg-white align-items-center justify-content-start p-3 shadow">
+                              <div class="col-3">
+                                 <p class="m-0">Criar banners nas verões desktop 1600x500px e mobile 1080x1350px.</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">Real Link</p>
+                              </div>
+                              <div class="col-2">
+                                 <p class="m-0">09/03/2022</p>
+                              </div>
+                              <div class="col-2">
+                                 <img class="rounded-circle px-2" src="css/img/PERFIL02.png" alt="">
+                              </div>
+                              <div class="col-2">
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecione</option>
+                                    <option value="1">Urgente</option>
+                                    <option value="2">Alta</option>
+                                    <option value="3">Normal</option>
+                                    <option value="3">Baixa</option>
+                                 </select>
+                              </div>
+                              <div class="col-1">
+                                 <p class="m-0 fw-bold text-success">Conluído</p>
+                              </div>
                            </div>
                         </div>
                      </div>
-                  </div>
-               </div>
             </div>
          </div>
-      </div>
    </body>
