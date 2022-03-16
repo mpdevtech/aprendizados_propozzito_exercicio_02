@@ -3,52 +3,79 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #efebf3;
-}
-/* MENU LATERAL */
 .wrapper {
-    width: 25%;
-    max-width: 300px;
-    height: 100vh;
+   width: 35%;
+   max-width: 350px;
+   height: 100vh;
 }
-.navbar {
+ .padding-geral {
+    /* padding: 80px; */
+    background-color: #efebf3;
+    /* height: 100vh; */
+ }
+ .rounded-circle {
+    width: 65px;
+ }
+ .p-5 {
+    padding: 60px 120px !important;
+ }
+ /* BACKGROUNDS */
+ .bg-dark {
+    background-color: #2e2842 !important;
+ }
+ .bg-danger {
     height: 70px;
+ }
+ .bg-painel {
+    height: 70px;
+ }
+ .bg-body {
+    padding: 20px;
+ }
+ .bg-primary {
+    background-color: #b76bff !important;
+ }
+ .bg-success {
+    background-color: #2ECD6F !important;
+ }
+ .bg-red {
+    background-color: #ff6b6b;
+ }
+ /* TEXT-COLOR */
+ .text-primary {
+    color: #b76bff !important;
+ }
+ .text-success {
+    color: #2ECD6F !important;
+ }
+ .text-dark {
+     color: #2e2842 !important;
+ }
+ .text-red {
+    color: #ff6b6b;
+ }
+
+ .btn-success {
+     background-color: #2ECD6F;
+     border: 1px solid #2ECD6F;
+ }
+ .btn-success:hover {
+    background-color: #1a8f4b;
+    border: 1px solid #1a8f4b;
 }
-.text-secondary {
-    color: #a7a7a7 !important;
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #b76bff;
+    color: #b76bff;
 }
-.rounded-circle {
-    width: 60px;
+.btn-primary:hover {
+   background-color: #2e2842;
+   border: 1px solid #2e2842;
 }
-li:hover a {
+ li:hover a {
     color: #fff !important;
     border-radius: 10px;
     background-color: #1d1635;
     font-weight: 700 !important;
     transition: 0.2s;
-}
-/* BACKGROUNDS */
-.bg-dark {
-    background-color: #2e2842 !important;
-}
-.bg-danger {
-    background-color: #da1616 !important;
-    height: 70px;
-}
-.bg-secondary {
-    background-color: #efebf3 !important;
-}
-.bg-success {
-    background-color: #399c39 !important;
-}
-.bg-primary {
-    background-color: #2e2842 !important;
-}
-.table {
-    padding: 50px !important;
-}
-.text-dark {
-    color: #5a556e !important;
-}
-
+ }
